@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço da Gasolina:"
+        android:id="@+id/gasolina"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço do Álcool:"
+        android:id="@+id/alcool"
+        android:layout_below="@id/texto1"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto1"
+        android:layout_below="@id/gasolina"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/texto2"
+        android:layout_below="@id/alcool"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        android:layout_below="@id/texto2"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:id="@+id/botao"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultado"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/botao"
+        android:textSize="30dp"/>
+
+</RelativeLayout>
